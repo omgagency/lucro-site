@@ -1,0 +1,110 @@
+nav {
+    font-family: 'Circular Std' !important;
+    font-size: 16px !important;
+}
+
+nav.navbar.bg-dark {
+    background: #fff !important;
+    padding-top: 10px;
+}
+
+ul.navbar-nav {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+li.nav-item {
+    display: inline-block;
+}
+
+a.navbar-brand {
+    padding-left: 1rem;
+}
+
+li.nav-item a,
+li.nav-item a:hover {
+    color: #455D62;
+    padding: 0 30px;
+    border-bottom: 8px solid transparent;
+    display: block;
+    padding-bottom: 10px;
+}
+
+li.nav-item a:hover,
+li.nav-item a.activo {
+    border-bottom: 8px solid #EF5D50;
+}
+
+a.nav-link.activo {
+    color: #455D62 !important;
+}
+
+ul.right_top {
+    display: block;
+    width: 470px;
+    text-align: center;
+}
+
+.right_top li {
+    display: inline-block !important;
+}
+
+.right_top li a {
+    display: block;
+    justify-content: center;
+    padding: 8px 24px;
+    background: transparent;
+    border: 2px solid #455D62;
+    text-decoration: none;
+    margin: 0px 16px;
+    border-radius: 16px;
+    color: #455D62;
+}
+
+.right_top li a.signup {
+    background: #36AF67 !important;
+    border: 2px solid #36AF67 !important;
+    color: #fff;
+}
+
+.navbar-dark .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+    background-image: url(/assets/images/menu2.svg);
+}
+
+.navbar-dark .navbar-toggler[aria-expanded=false] .navbar-toggler-icon {
+    background-image: url(/assets/images/menu.svg);
+}
+
+@media (max-width: 768px) {
+    li a.nav-link.menu_link:after {
+        width: 54px;
+        height: 2px;
+        background: #EF5D50;
+        content: '';
+        display: block;
+        margin-top: 15px;
+    }
+    li.nav-item {
+        padding-bottom: 30px !important;
+        display: block;
+    }
+    li.nav-item a:hover,
+    li.nav-item a.activo {
+        border-bottom: 0px solid transparent;
+    }
+    ul.navbar-nav {
+        padding-top: 39px;
+    }
+    .nav-link.menu_link {
+        text-align: left;
+    }
+    .navbar ul.right_top li {
+        display: block !important;
+        padding-bottom: 15px;
+    }
+    ul.right_top {
+        max-width: 200px !important;
+        margin: 0 auto !important;
+    }
+}

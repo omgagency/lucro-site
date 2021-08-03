@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/lucro",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
