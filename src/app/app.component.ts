@@ -35,18 +35,7 @@ export class AppComponent implements OnInit{
             	event.preventDefault();
 		      	});
 
-            $( ".tabs_content .nav-link" ).click(function( event ) {
-
-                  event.preventDefault();
-
-                  var color = $(this).attr('data-class');
-
-                  $('.tabs_content').attr('data-color',color );
- 
-
-            });
-
-
+            
 
 
        });

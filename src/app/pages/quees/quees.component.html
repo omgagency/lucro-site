@@ -2,7 +2,25 @@
 </app-header>
 <section id="quees" class="seccion">
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/WlXZohfdRgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="caja_box">
+
 
         <div class="container home_quees">
 
@@ -21,10 +39,9 @@
                 </div>
                 <div class="col-sm right_home wow fadeInRight order-1 order-sm-2" data-wow-delay="1.5s">
 
-                    <div class="video">
+                    <div class="video wow fadeInUp" data-wow-delay="2s" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SETjCb2Ek-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                        <img src="/assets/images/player.png" class="img-fluid">
                     </div>
 
                 </div>
@@ -35,6 +52,9 @@
         </div>
 
     </div>
+
+
+
 
 
     <div class="desafios">
@@ -50,7 +70,7 @@
 
                         <h3>Desafíos en LUCRO</h3>
 
-                        SSon actividades fáciles como llenar encuestas, tomar fotos en tu hogar o en tiendas (supermercados, establecimientos comerciales, entre otros) que estén cerca de tu ubicación. Con cada desafío, puedes lucrarte de muchas formas.
+                        Son actividades fáciles como llenar encuestas, tomar fotos en tu hogar o en tiendas (supermercados, establecimientos comerciales, entre otros) que estén cerca de tu ubicación. Con cada desafío, puedes lucrarte de muchas formas.
                     </div>
 
                     <div class="col-sm right_desafios img_desafios order-1 order-sm-2  wow fadeInRight" data-wow-delay="1.5s">
@@ -76,7 +96,7 @@
 
                         <h3>¿Cuáles son los <br>tipos de desafíos?</h3>
 
-                        <a class="btn visible_desk" href="#">Reglamento lucro</a>
+                        <a class="btn visible_desk" href="http://lucro-app.com/documentos/Lucro-Reglamento.pdf" target="_blank">Reglamento lucro</a>
 
 
                     </div>
@@ -123,24 +143,25 @@
 
                             <div class="col">
 
-                                <img class="bullet gris" src="/assets/images/check2.svg"> Los desafíos Bonificación te permiten obtener los puntos correspondientes a un premio. Una vez se recibe la carga de puntos, estos se podrás redimir en dinero.
+                                <img class="bullet gris" src="/assets/images/check2.svg"> Los desafíos Bonificación te permiten obtener los puntos correspondientes a un premio. Una vez recibes la carga de puntos, podrás redimirlos en dinero.
+
                             </div>
+
+                            <a class="btn visible_mobile  wow fadeInRight" data-wow-delay="3.5s" href="http://lucro-app.com/documentos/Lucro-Reglamento.pdf" target="_blank">Reglamento lucro</a>
+
+
 
                         </div>
 
-                        <a class="btn visible_mobile  wow fadeInRight" data-wow-delay="3.5s">href="#">Reglamento lucro</a>
-
-
-
                     </div>
 
+
+
+
+
+
+
                 </div>
-
-
-
-
-
-
 
             </div>
 
@@ -216,7 +237,7 @@
                     <img src="/assets/images/insignia1.png"><br>
                     <h5>La seguridad de tus datos</h5>
 
-                    Los datos de nuestros usuarios se procesan con altos estándares tecnológicos de seguridad por medio de una infraestructura que almacena y codifica la información personal para garantizar su protección y anonimato.
+                    Los datos de nuestros usuarios se procesan con altos estándares tecnológicos de seguridad por medio de una infraestructura que garantiza su protección y anonimato.
 
 
                 </div>
@@ -330,7 +351,7 @@
                 </div>
                 <div class="col-sm-3 apps_lisks">
 
-                    <strong>Descarganos aquí</strong>
+                    <strong>Descárgala aquí</strong>
 
                     <img src="/assets/images/ios.png" class="store_footer">
                     <img src="/assets/images/android.png" class="store_footer">
@@ -345,25 +366,27 @@
             <div class="row copy">
 
                 <div class="col-sm-8 order-2 order-sm-1 copy_main">
-                    © 2020 Lucro App - Términos y Condiciones de Lucro App y Políticas de Privacidad
+                    © 2020 Lucro App - <a href="https://www.lucro-app.com/terminosycondiciones.pdf" target="_blank">Términos y Condiciones de Lucro App y Políticas de Privacidad</a>
                 </div>
                 <div class="col-sm-4 order-1 order-sm-2">
 
 
-                    <ul class="redes">
+                    <ul class="redes ">
                         <li>
-                            <a href="#"><img src="/assets/images/instagram.png"></a>
+                            <a href="https://www.instagram.com/lucroappoficial/" target="_blank"><img src="/assets/images/instagram.png "></a>
                         </li>
                         <li>
-                            <a href="#"><img src="/assets/images/linkedin.png"></a>
+                            <a href="https://www.linkedin.com/company/lucro-app-col/" target="_blank"><img src="/assets/images/linkedin.png "></a>
                         </li>
+
+                        <!--
                         <li>
-                            <a href="#"><img src="/assets/images/twitter.png"></a>
+                            <a href="https://www.facebook.com/lucroappoficial/" target="_blank"><img src="/assets/images/facebook.png "></a>
                         </li>
-                        <li>
-                            <a href="#"><img src="/assets/images/youtube.png"></a>
-                        </li>
+
+                    -->
                     </ul>
+
 
 
                 </div>

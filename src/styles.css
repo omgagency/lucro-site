@@ -190,18 +190,30 @@ section {
     padding-bottom: 60px;
 }
 
-.video iframe {
-    width: 100%;
-    height: 285px;
-    border-radius: 10px;
+.modal-dialog.modal-dialog-centered {
+    max-width: 835px;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    right: -29px;
+    background-color: #fff;
+    color: #000 !important;
+    top: 7px;
+}
+
+.modal-header {
+    padding: 0px;
+    border: none;
 }
 
 .video {
     background-image: url(/assets/images/video.png);
     background-size: 100%;
-    padding: 51px 20px;
+    padding: 90px 20px;
     min-height: 500px;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .bullet {
@@ -334,6 +346,10 @@ footer {
     padding-top: 40px;
     color: #344549;
     position: relative;
+}
+
+footer a {
+    color: #344549;
 }
 
 footer .phone_footer {
@@ -1195,7 +1211,58 @@ body nav.navbar.bg-dark.header_scroll {
     background: rgba(255, 255, 255, 0.6) !important;
 }
 
+.left_compara {
+    position: relative;
+}
+
+.top_phone {
+    position: absolute;
+    margin-top: -125px;
+    top: 0px;
+    width: calc(100% - 27px);
+    text-align: center;
+    z-index: 2;
+}
+
+.top_phone img {
+    margin: 0 auto;
+}
+
+.scroll_compara {
+    position: absolute;
+    background: #fff;
+    width: 276px;
+    left: 50%;
+    height: 598px;
+    top: -67px;
+    margin-left: -91px;
+    border-radius: 26px;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
 @media (max-width: 768px) {
+    .top_phone {
+        display: none;
+    }
+    .scroll_compara {
+        display: none;
+    }
+    .scroll_compara {
+        position: absolute;
+        background: #fff;
+        width: 61%;
+        left: 53%;
+        height: 91%;
+        top: -7px;
+        border-radius: 26px;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+    .modal-body iframe {
+        width: 100%;
+        height: 180px;
+    }
     body nav.navbar.bg-dark.header_scroll {
         background: rgba(255, 255, 255, 1) !important;
     }
@@ -1489,9 +1556,6 @@ body nav.navbar.bg-dark.header_scroll {
     #quees h3 {
         font-size: 24px;
         line-height: 25px;
-    }
-    .video iframe {
-        height: 160px;
     }
     .video {
         padding: 51px 20px;
