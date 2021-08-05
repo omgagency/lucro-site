@@ -12,6 +12,9 @@ import { ComunidadComponent } from './pages/comunidad/comunidad.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     BrowserAnimationsModule,
     NgwWowModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
