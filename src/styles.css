@@ -16,6 +16,20 @@ body.home {
     padding-top: 85px;
 }
 
+.delay-1 {
+animation-delay: .25s;
+}
+.delay-2 {
+animation-delay: .5s;
+}
+.delay-3 {
+animation-delay: .75s;
+}
+.delay-4 {
+animation-delay: 1s;
+}
+
+
 .caja_box.first_caja_box {
     min-height: calc(100vh - 85px);
 }
@@ -81,7 +95,7 @@ body {
 }
 
 .left_home {
-    font-size: 16px;
+    font-size: 18px;
     color: #789095;
 }
 
@@ -188,6 +202,8 @@ section {
     border-radius: 0px 0px 240px 40px;
     color: #fff;
     padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .modal-dialog.modal-dialog-centered {
@@ -237,10 +253,6 @@ section {
 
 .bullet.gris {
     background: #344549;
-}
-
-.right_desafios {
-    line-height: 16px;
 }
 
 .img_desafios {
@@ -298,13 +310,15 @@ section {
 .ser_miembro h3 {
     margin-top: 40px !important;
     color: #344549 !important;
-    margin-bottom: 40px !important;
+    margin-bottom: 80px !important;
 }
 
 .ser_miembro {
     color: #455D62;
     line-height: 15px;
     background: radial-gradient(42.38% 42.38% at 50% bottom, #CDEBD9 0%, rgba(205, 235, 217, 0) 100%);
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .nuestras_insignias {
@@ -341,7 +355,7 @@ section {
 
 footer {
     background: #EFFDA0;
-    padding-top: 40px;
+    padding-top: 20px;
     color: #344549;
     position: relative;
 }
@@ -353,7 +367,7 @@ footer a {
 footer .phone_footer {
     max-width: 420px;
     position: relative;
-    margin-top: -130px;
+    margin-top: -110px;
 }
 
 footer .container {
@@ -733,7 +747,7 @@ footer.footer.como_lucrarse {
 }
 
 .cifra_count {
-    color: #049B41;
+    color: #fff;
     background: #FFFFFF;
     border-radius: 15px;
     padding: 5px 30px !important;
@@ -743,8 +757,23 @@ footer.footer.como_lucrarse {
     top: 15px;
     left: 15px;
     text-align: center;
-    font-size: 13px;
+    font-size: 20px;
     padding: 5px;
+    line-height: 22px;
+}
+
+.cifra_count.verde{
+    background: #049B41;
+}
+
+.cifra_count.rojo{
+    background: #EF5D50;
+}
+
+.cifra_count.amarillo{
+    background: #E5FC61;
+    color: #049B41;
+    font-size: 18px;
 }
 
 .box_all .box_234 {
@@ -1353,7 +1382,61 @@ body nav.navbar.bg-dark.header_scroll {
     padding-top: 200px;
 }
 
+#como .slider_principal h3 {
+    text-align: center !important;
+    display: block !important;
+}
+
+.btn_reglamento{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn_reglamento:hover{
+    color: #fff;
+    margin-top: 20px;
+    display: block;
+}
+
+.reglamento_box h3{
+    padding-top: 80px;
+}
+
+#exampleModalReglamento .modal-content {
+    padding: 20px;
+}
+
+#exampleModalReglamento .modal-content .btn {
+    max-width: 400px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.nuestras_insignias h3{
+    margin-bottom: 100px !important;
+}
+
+.nuestras_insignias h5 {
+    margin-top: 30px;
+}
+
 @media (max-width: 768px) {
+
+    .nuestras_insignias h5 {
+    margin-top: 10px;
+}
+
+    .nuestras_insignias h3{
+    margin-bottom: 30px !important;
+}
+
+    #exampleModalReglamento .modal-content .btn:after{
+        display: none;
+    }
+    .reglamento_box h3{
+    padding-top: 0px;
+}
+
     #como .col-sm.left_home {
         padding-top: 0px;
     }
@@ -1589,7 +1672,8 @@ body nav.navbar.bg-dark.header_scroll {
         position: absolute;
         top: 8px;
         left: 8px;
-        font-size: 10px;
+        font-size: 15px !important;
+        line-height: 17px !important;
         padding: 5px;
     }
     .box_all .box1 {
