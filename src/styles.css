@@ -257,9 +257,10 @@ section {
 
 .img_desafios {
     padding-bottom: 40px;
+    position: relative;
 }
 
-.img_desafios img {
+.img_desafios img.desafios2, .img_desafios img.desafios1 {
     position: relative;
     margin-top: -40px;
 }
@@ -1426,6 +1427,27 @@ body nav.navbar.bg-dark.header_scroll {
     width: 100%;
     height: 600px;
     border-radius: 25px;
+}
+
+.desafios2{
+    position: relative;
+    top: 0px;
+}
+
+.desafios1{
+        position: absolute !important;
+    top: -24px;
+    left: 0px;
+}
+
+.desafios3{
+    position: absolute;
+width: 60px;
+height: 60px;
+left: 140px;
+top: 120px;
+background: #455D62;
+border-radius: 50%;
 }
 
 @media (max-width: 768px) {
