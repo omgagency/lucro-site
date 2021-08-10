@@ -17,18 +17,28 @@ body.home {
 }
 
 .delay-1 {
-animation-delay: .25s;
-}
-.delay-2 {
-animation-delay: .5s;
-}
-.delay-3 {
-animation-delay: .75s;
-}
-.delay-4 {
-animation-delay: 1s;
+    animation-delay: .25s;
 }
 
+.delay-2 {
+    animation-delay: .5s;
+}
+
+.delay-3 {
+    animation-delay: .75s;
+}
+
+.delay-4 {
+    animation-delay: 1s;
+}
+
+.delay-5 {
+    animation-delay: 1.25s;
+}
+
+.delay-6 {
+    animation-delay: 1.5s;
+}
 
 .caja_box.first_caja_box {
     min-height: calc(100vh - 85px);
@@ -260,7 +270,8 @@ section {
     position: relative;
 }
 
-.img_desafios img.desafios2, .img_desafios img.desafios1 {
+.img_desafios img.desafios2,
+.img_desafios img.desafios1 {
     position: relative;
     margin-top: -40px;
 }
@@ -268,8 +279,6 @@ section {
 .intro_desafios {
     padding-top: 150px;
 }
-
-
 
 .desafios .btn {
     display: block;
@@ -765,15 +774,15 @@ footer.footer.como_lucrarse {
     line-height: 22px;
 }
 
-.cifra_count.verde{
+.cifra_count.verde {
     background: #049B41;
 }
 
-.cifra_count.rojo{
+.cifra_count.rojo {
     background: #EF5D50;
 }
 
-.cifra_count.amarillo{
+.cifra_count.amarillo {
     background: #E5FC61;
     color: #049B41;
     font-size: 18px;
@@ -1390,18 +1399,18 @@ body nav.navbar.bg-dark.header_scroll {
     display: block !important;
 }
 
-.btn_reglamento{
+.btn_reglamento {
     text-transform: uppercase;
     color: #fff;
 }
 
-.btn_reglamento:hover{
+.btn_reglamento:hover {
     color: #fff;
     margin-top: 20px;
     display: block;
 }
 
-.reglamento_box h3{
+.reglamento_box h3 {
     padding-top: 80px;
 }
 
@@ -1415,7 +1424,7 @@ body nav.navbar.bg-dark.header_scroll {
     width: 100%;
 }
 
-.nuestras_insignias h3{
+.nuestras_insignias h3 {
     margin-bottom: 100px !important;
 }
 
@@ -1429,59 +1438,52 @@ body nav.navbar.bg-dark.header_scroll {
     border-radius: 25px;
 }
 
-.desafios2{
+.desafios2 {
     position: relative;
     top: 0px;
 }
 
-.desafios1{
-        position: absolute !important;
+.desafios1 {
+    position: absolute !important;
     top: -24px;
     left: 0px;
 }
 
-.desafios3{
+.desafios3 {
     position: absolute;
-width: 60px;
-height: 60px;
-left: 140px;
-top: 120px;
-background: #455D62;
-border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    left: 140px;
+    top: 120px;
+    background: #455D62;
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
-
-    .left_panel .info strong{
+    .left_panel .info strong {
         line-height: 36px;
     }
-
     .gift_compara.visible_mobile {
-    position: absolute;
-    top: -7px;
-    width: 58%;
-    right: 41px;
-  
-}
-.gift_compara.visible_mobile img{
-  border-radius: 20px;
-}
-
+        position: absolute;
+        top: -7px;
+        width: 58%;
+        right: 41px;
+    }
+    .gift_compara.visible_mobile img {
+        border-radius: 20px;
+    }
     .nuestras_insignias h5 {
-    margin-top: 10px;
-}
-
-    .nuestras_insignias h3{
-    margin-bottom: 30px !important;
-}
-
-    #exampleModalReglamento .modal-content .btn:after{
+        margin-top: 10px;
+    }
+    .nuestras_insignias h3 {
+        margin-bottom: 30px !important;
+    }
+    #exampleModalReglamento .modal-content .btn:after {
         display: none;
     }
-    .reglamento_box h3{
-    padding-top: 0px;
-}
-
+    .reglamento_box h3 {
+        padding-top: 0px;
+    }
     #como .col-sm.left_home {
         padding-top: 0px;
     }

@@ -1,0 +1,193 @@
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.right_panel {
+    position: relative;
+}
+
+.avatar {
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+.premios1 {
+    position: absolute;
+    left: 20%;
+    top: 110px;
+}
+
+.premios2 {
+    position: absolute;
+    right: 27%;
+    top: 20px;
+}
+
+.premios3 {
+    position: absolute;
+    left: 9%;
+    top: 276px;
+}
+
+.premios {
+    position: relative;
+}
+
+.beneficios {
+    position: relative;
+}
+
+.beneficios1 {
+    position: absolute;
+    left: 20%;
+    top: 110px;
+}
+
+.beneficios2 {
+    position: absolute;
+    left: 4%;
+    top: 99px;
+}
+
+.beneficios3 {
+    position: absolute;
+    right: 22%;
+    top: 150px;
+}
+
+.dinero {
+    position: relative;
+}
+
+.dinero1 {
+    position: absolute;
+    left: 20%;
+    top: 110px;
+}
+
+.dinero2 {
+    position: absolute;
+    left: 9%;
+    top: 99px;
+}
+
+.dinero3 {
+    position: absolute;
+    right: 20%;
+    top: 350px;
+}
+
+.bonificaciones {
+    position: relative;
+}
+
+.bonificaciones1 {
+    position: absolute;
+    left: 20%;
+    top: 110px;
+}
+
+.bonificaciones2 {
+    position: absolute;
+    left: 9%;
+    top: 99px;
+}
+
+.bonificaciones3 {
+    position: absolute;
+    right: 20%;
+    top: 350px;
+}
+
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: perspective(1000px) translateZ(0) rotateY(0) scale(1);
+        transform: perspective(1000px) translateZ(0) rotateY(0) scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: perspective(1000px) translateZ(150px) rotateY(170deg) scale(1);
+        transform: perspective(1000px) translateZ(150px) rotateY(170deg) scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        -webkit-transform: perspective(1000px) translateZ(150px) rotateY(190deg) scale(1);
+        transform: perspective(1000px) translateZ(150px) rotateY(190deg) scale(1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    80% {
+        -webkit-transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(.98);
+        transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(.98);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(1);
+        transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes flip {
+    0% {
+        -webkit-transform: perspective(1000px) translateZ(0) rotateY(0) scale(1);
+        -ms-transform: perspective(1000px) translateZ(0) rotateY(0) scale(1);
+        transform: perspective(1000px) translateZ(0) rotateY(0) scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: perspective(1000px) translateZ(150px) rotateY(170deg) scale(1);
+        -ms-transform: perspective(1000px) translateZ(150px) rotateY(170deg) scale(1);
+        transform: perspective(1000px) translateZ(150px) rotateY(170deg) scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        -webkit-transform: perspective(1000px) translateZ(150px) rotateY(190deg) scale(1);
+        -ms-transform: perspective(1000px) translateZ(150px) rotateY(190deg) scale(1);
+        transform: perspective(1000px) translateZ(150px) rotateY(190deg) scale(1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    80% {
+        -webkit-transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(.98);
+        -ms-transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(.98);
+        transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(.98);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(1);
+        -ms-transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(1);
+        transform: perspective(1000px) translateZ(0) rotateY(360deg) scale(1);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+}
+
+.animated.flip {
+    -webkit-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+}
+
+.flip {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
