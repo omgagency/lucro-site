@@ -1460,6 +1460,92 @@ body nav.navbar.bg-dark.header_scroll {
 }
 
 @media (max-width: 768px) {
+    .right_panel {
+        padding: 30px 0;
+        margin-top: 30px;
+    }
+    .premios2 img,
+    .premios2,
+    .dinero2 img,
+    .dinero2,
+    .beneficios2 img,
+    .beneficios2,
+    .bonificaciones2 img,
+    .bonificaciones2 {
+        width: 90px !important;
+        height: auto !important;
+    }
+    .premios3 img,
+    .premios3,
+    .dinero3 img,
+    .dinero3,
+    .beneficios3 img,
+    .beneficios3,
+    .bonificaciones3 img,
+    .bonificaciones3 {
+        width: 90px !important;
+        height: auto !important;
+    }
+    .premios1 img,
+    .dinero1 img,
+    .beneficios1 img,
+    .bonificaciones1 img {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0px !important;
+    }
+    .premios1,
+    .dinero1,
+    .beneficios1,
+    .bonificaciones1 {
+        top: 0px !important;
+        left: 50% !important;
+        margin-left: -43%;
+        width: 86% !important;
+    }
+    .premios2 {
+        right: 0% !important;
+        top: 20px;
+    }
+    .premios3 {
+        top: 225px !important;
+    }
+    .dinero2 {
+        top: 20px !important;
+    }
+    .dinero3 {
+        right: 0px !important;
+        top: 286px !important;
+    }
+    .beneficios2 {
+        top: 20px !important;
+    }
+    .beneficios3 {
+        right: 0px !important;
+        top: 286px !important;
+    }
+    .bonificaciones2 {
+        top: 20px !important;
+    }
+    .bonificaciones3 {
+        right: 0px !important;
+        top: 286px !important;
+    }
+    .btn_reglamento {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .desafios3 {
+        width: 40px;
+        height: 40px;
+        left: 99px;
+        top: 93px;
+    }
+    .img_desafios img.desafios2,
+    .img_desafios img.desafios1 {
+        margin-top: 0px;
+    }
     .left_panel .info strong {
         line-height: 36px;
     }
