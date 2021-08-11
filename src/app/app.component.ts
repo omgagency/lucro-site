@@ -32,7 +32,7 @@ export class AppComponent implements OnInit{
         });
 
 
-          this.httpService.get('//69.195.80.181/lucro-admin/servicios/testimonios.php').subscribe(
+          this.httpService.get('http://69.195.80.181/lucro-admin/servicios/testimonios.php').subscribe(
             data => {
               this.arrTestimonios = data as string [];	 // FILL THE ARRAY WITH DATA.
               console.log(this.arrTestimonios);
