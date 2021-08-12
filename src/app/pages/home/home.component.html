@@ -1,6 +1,22 @@
 <app-header>
 </app-header>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/WlXZohfdRgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <section id="home" class="seccion">
 
     <div class="caja_box first_caja_box">
@@ -23,7 +39,7 @@
                         <img src="/assets/images/android.png" class="store">
                     </div>
 
-                    <a class="btn fadeInLeft wow" data-wow-delay="2s" href="#">Video lucro app</a>
+                    <a class="btn fadeInLeft wow" data-wow-delay="2s" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Video lucro app</a>
 
 
                 </div>
