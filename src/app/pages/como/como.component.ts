@@ -53,7 +53,9 @@ export class ComoComponent implements OnInit {
 
       setTimeout(function(){
 
-       $('.slider_all').bxSlider();
+       $('.slider_all').bxSlider({
+        oneToOneTouch: false
+       });
 
     }, 3000);
 

@@ -397,8 +397,10 @@
                     <div class="slider_all">
 
                         <div class="slide" *ngFor="let item of arrBanners">
-                            <img src="https://lucro.omgagency.co/{{item.banner_desktop}}" class="img-fluid visible_desk">
-                            <img src="https://lucro.omgagency.co/{{item.banner_mobile}}" class="img-fluid visible_mobile">
+                            <a href="{{item.link}}" target="_blank">
+                                <img src="https://lucro.omgagency.co/{{item.banner_desktop}}" class="img-fluid visible_desk">
+                                <img src="https://lucro.omgagency.co/{{item.banner_mobile}}" class="img-fluid visible_mobile">
+                            </a>
                         </div>
 
 

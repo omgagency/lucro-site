@@ -1332,8 +1332,8 @@ body nav.navbar.bg-dark.header_scroll {
 .scroll_compara {
     position: absolute;
     background: #fff;
-    width: 276px;
-    left: 50%;
+    width: 298px;
+    left: 48%;
     height: 598px;
     top: -67px;
     margin-left: -91px;
@@ -1504,6 +1504,9 @@ body nav.navbar.bg-dark.header_scroll {
 }
 
 @media (max-width: 768px) {
+    .slide {
+        padding: 0 20px;
+    }
     .ios,
     .android {
         font-size: 15px;
