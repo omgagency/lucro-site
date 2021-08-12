@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
-import { HttpClient } from '@angular/common/http';
-import { HttpErrorResponse } from '@angular/common/http';
 import { Router, NavigationEnd } from '@angular/router';
-
 
 declare var $: any;
 
@@ -15,33 +12,23 @@ declare var $: any;
 export class AppComponent implements OnInit{
   title = 'lucro';
 
-   constructor(private wowService: NgwWowService, private httpService: HttpClient,private router: Router) {
+   constructor(private wowService: NgwWowService,private router: Router) {
     this.wowService.init();
   }
 
-  arrTestimonios: string [];
 
+
+  
   ngOnInit() {
 
-
+    
       this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
                 return;
             }
             window.scrollTo(0, 0)
         });
-
-
-          this.httpService.get('https://demos.omgagency.co/servicios/testimonios.php').subscribe(
-            data => {
-              this.arrTestimonios = data as string [];	 // FILL THE ARRAY WITH DATA.
-              console.log(this.arrTestimonios);
-            },
-            (err: HttpErrorResponse) => {
-              console.log (err.message);
-            }
-          );
-
+   
 
        $(document).ready(function() {
 

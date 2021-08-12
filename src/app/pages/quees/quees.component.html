@@ -51,10 +51,19 @@
                 <div class="col-sm left_home order-2 order-sm-1">
 
                     <div class="red wow fadeInLeft">Lucro App</div>
-                    <h3 class="wow fadeInLeft" data-wow-delay="0.5s">La comunidad que se lucra de muchas formas</h3>
+                    <h3 class="wow fadeInLeft" data-wow-delay="0.5s">
+
+                        <ng-container *ngIf="arrContenidos">
+                            {{arrContenidos[0].titulo}}
+                        </ng-container>
+
+                    </h3>
 
                     <div class="text_top_home wow fadeInLeft" data-wow-delay="1s">
-                        Como miembro de Lucro puedes recibir varios desafíos: Los rojos te dan descuentos, con los blancos ganas fichas, juegas y participas por premios y con los verdes, acumulas puntos redimibles en dinero. Viajes, bonos, dinero y más en una sola App.
+
+                        <ng-container *ngIf="arrContenidos">
+                            <div [innerHtml]="arrContenidos[0].contenido"> </div>
+                        </ng-container>
 
                     </div>
 
@@ -100,9 +109,17 @@
 
                     <div class="col-sm intro_desafios order-2 order-sm-1  wow fadeInLeft" data-wow-delay="0s">
 
-                        <h3>Desafíos en LUCRO</h3>
+                        <h3>
 
-                        Son actividades fáciles como llenar encuestas, tomar fotos en tu hogar o en tiendas (supermercados, establecimientos comerciales, entre otros) que estén cerca de tu ubicación. Con cada desafío, puedes lucrarte de muchas formas.
+                            <ng-container *ngIf="arrContenidos">
+                                {{arrContenidos[1].titulo}}
+                            </ng-container>
+                        </h3>
+
+                        <ng-container *ngIf="arrContenidos">
+                            <div [innerHtml]="arrContenidos[1].contenido"> </div>
+                        </ng-container>
+
                     </div>
 
                     <div class="col-sm right_desafios img_desafios order-1 order-sm-2">
@@ -131,7 +148,11 @@
 
                     <div class="col-sm wow fadeInLeft reglamento_box" data-wow-delay="0s">
 
-                        <h3>¿Cuáles son los <br>tipos de desafíos?</h3>
+                        <h3>
+                            <ng-container *ngIf="arrContenidos">
+                                {{arrContenidos[2].titulo}}
+                            </ng-container>
+                        </h3>
 
                         <a class="visible_desk btn_reglamento" data-bs-toggle="modal" data-bs-target="#exampleModalReglamento" href="#">Ir a ver reglamento de Lucro app</a>
 
@@ -140,7 +161,11 @@
 
                     <div class="col-sm right_desafios">
 
-                        <div class="row wow fadeInRight" data-wow-delay="0.3s">
+                        <ng-container *ngIf="arrContenidos">
+                            <div [innerHtml]="arrContenidos[2].contenido"> </div>
+                        </ng-container>
+
+                        <!--<div class="row wow fadeInRight" data-wow-delay="0.3s">
 
                             <div class="col">
 
@@ -174,7 +199,7 @@
                                 <img class="bullet lila" src="/assets/images/check.svg"> Los desafíos "Bonificación" te permiten obtener los puntos correspondientes a un premio. Una vez se recibe la carga de puntos, estos se podrás redimir en dinero.
                             </div>
 
-                        </div>-->
+                        </div>
 
                         <div class="row wow fadeInRight" data-wow-delay="1.2s">
 
@@ -188,7 +213,7 @@
 
 
 
-                        </div>
+                        </div>-->
 
                     </div>
 
@@ -220,9 +245,18 @@
                 </div>
 
                 <div class="col-sm">
-                    <h3 class="wow fadeInRight" data-wow-delay="0.3s">Lo que necesitas para ser miembro de Lucro</h3>
+                    <h3 class="wow fadeInRight" data-wow-delay="0.3s">
 
-                    <div class="row lista_item wow fadeInUp" data-wow-delay="0.6s">
+                        <ng-container *ngIf="arrContenidos">
+                            {{arrContenidos[3].titulo}}
+                        </ng-container>
+                    </h3>
+
+                    <ng-container *ngIf="arrContenidos">
+                        <div [innerHtml]="arrContenidos[3].contenido"> </div>
+                    </ng-container>
+
+                    <!--<div class="row lista_item wow fadeInUp" data-wow-delay="0.6s">
 
                         <div class="col align-middle align-items-center d-flex">
                             <div class="icon_lila d-flex"><img src="/assets/images/icon1.png"> </div> Ser mayor de 18 años.
@@ -244,7 +278,7 @@
                             <div class="icon_lila d-flex"><img src="/assets/images/icon3.png"> </div>Tener un celular inteligente con datos o conexión Wifi.
                         </div>
 
-                    </div>
+                    </div>-->
 
 
 
@@ -272,30 +306,44 @@
                 <div class="col-sm wow fadeInUpBig" data-wow-delay="0.3s">
 
                     <img src="/assets/images/insignia1.png" class="wow bounceInLeft" data-wow-delay="0.5s" data-wow-duration="2s"><br>
-                    <h5>La seguridad de tus datos</h5>
+                    <h5>
+                        <ng-container *ngIf="arrContenidos">
+                            {{arrContenidos[4].titulo}}
+                        </ng-container>
+                    </h5>
 
-                    Los datos de nuestros usuarios se procesan con altos estándares tecnológicos de seguridad por medio de una infraestructura que garantiza su protección y anonimato.
-
+                    <ng-container *ngIf="arrContenidos">
+                        <div [innerHtml]="arrContenidos[4].contenido"> </div>
+                    </ng-container>
 
                 </div>
                 <div class="col-sm wow fadeInUpBig" data-wow-delay="0.6s">
 
                     <img src="/assets/images/insignia2.png" class="wow swing" data-wow-delay="0.8s" data-wow-duration="2s"><br>
-                    <h5>Comunicación transparente</h5>
+                    <h5>
+                        <ng-container *ngIf="arrContenidos">
+                            {{arrContenidos[5].titulo}}
+                        </ng-container>
+                    </h5>
 
-                    La información que recopila Lucro se utiliza sólo con fines estadísticos y de investigación de mercado para la mejora de procesos empresariales y de la experiencia del consumidor, todo esto, dentro del marco legal de la compañía.
-
+                    <ng-container *ngIf="arrContenidos">
+                        <div [innerHtml]="arrContenidos[5].contenido"> </div>
+                    </ng-container>
 
                 </div>
                 <div class="col-sm wow fadeInUpBig" data-wow-delay="0.9s">
 
 
                     <img src="/assets/images/insignia3.png" class="wow bounceInRight" data-wow-delay="1.2s" data-wow-duration="2s"><br>
-                    <h5>Tu información es importante
+                    <h5>
+                        <ng-container *ngIf="arrContenidos">
+                            {{arrContenidos[6].titulo}}
+                        </ng-container>
                     </h5>
 
-                    Para nosotros, tu información es valiosa, por eso te recompensamos con diferentes beneficios. Dale la importancia que merece y sácale provecho.
-
+                    <ng-container *ngIf="arrContenidos">
+                        <div [innerHtml]="arrContenidos[6].contenido"> </div>
+                    </ng-container>
 
                 </div>
 
@@ -311,18 +359,27 @@
 
             <div class="row">
 
-                <div class="col-sm wow rollIn" data-wow-delay="0.5s">
+                <div class="col-sm">
 
-                    <img src="/assets/images/phone_footer.png" class="img-fluid phone_footer">
-
+                    <div class="wow rollIn" data-wow-delay="0.5s">
+                        <img src="/assets/images/phone_footer.png" class="img-fluid phone_footer">
+                    </div>
                 </div>
 
                 <div class="col-sm wow fadeInRight" data-wow-delay="1s">
 
                     <img src="/assets/images/qr.png" class="qr"><br>
-                    <h3>Descarga LUCRO en tu celular</h3>
+                    <h3>
 
-                    Completa desafíos y se parte de la comunidad de usuarios que se lucra de muchas formas.
+                        <ng-container *ngIf="arrContenidos">
+                            {{arrContenidos[7].titulo}}
+                        </ng-container>
+
+                    </h3>
+
+                    <ng-container *ngIf="arrContenidos">
+                        <div [innerHtml]="arrContenidos[7].contenido"> </div>
+                    </ng-container>
 
                     <div class="tiendas">
                         <a href="https://apps.apple.com/us/app/lucro/id1538248328" target="_blank"><img src="/assets/images/ios.png" class="store"></a>

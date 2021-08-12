@@ -1459,7 +1459,55 @@ body nav.navbar.bg-dark.header_scroll {
     border-radius: 50%;
 }
 
+.ios {
+    position: absolute;
+    align-items: center;
+    padding: 3px 16px;
+    width: auto;
+    height: 32px;
+    background: #F4F7F5;
+    box-shadow: 0px 7.58974px 7.58974px rgba(38, 50, 56, 0.12), 0px 15.1795px 22.7692px rgba(38, 50, 56, 0.08);
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #111718;
+    bottom: 10px;
+    margin-left: -10px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.android {
+    position: absolute;
+    align-items: center;
+    padding: 3px 16px;
+    width: auto;
+    height: 32px;
+    background: #96CF49;
+    box-shadow: 0px 3.94272px 3.94272px rgba(38, 50, 56, 0.12), 0px 7.88545px 11.8282px rgba(38, 50, 56, 0.08);
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    bottom: 50px;
+    margin-left: -10px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.ios img {
+    margin-right: 5px;
+}
+
+.android img {
+    margin-right: 5px;
+}
+
 @media (max-width: 768px) {
+    .ios,
+    .android {
+        font-size: 15px;
+    }
     .right_panel {
         padding: 30px 0;
         margin-top: 30px;

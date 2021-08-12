@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { HttpErrorResponse } from '@angular/common/http';
 
 declare var $: any;
 
@@ -9,9 +11,33 @@ declare var $: any;
 })
 export class ComoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private httpService: HttpClient) { }
+
+  arrContenidos: string [];
+  arrBanners: string [];
+
 
   ngOnInit(): void {
+
+    this.httpService.get('https://lucro.omgagency.co/servicios/contenidos.php?cat=como').subscribe(
+      data => {
+        this.arrContenidos = data as string [];	 // FILL THE ARRAY WITH DATA.
+        //console.log(this.arrContenidos);
+      },
+      (err: HttpErrorResponse) => {
+        //console.log (err.message);
+      }
+    );
+
+    this.httpService.get('https://lucro.omgagency.co/servicios/banners.php').subscribe(
+      data => {
+        this.arrBanners = data as string [];	 // FILL THE ARRAY WITH DATA.
+        //console.log(this.arrBanners);
+      },
+      (err: HttpErrorResponse) => {
+        //console.log (err.message);
+      }
+    );
 
 
     $(document).ready(function() {
@@ -25,7 +51,11 @@ export class ComoComponent implements OnInit {
           }, 'slow');
       }
 
-      $('.slider_all').bxSlider();
+      setTimeout(function(){
+
+       $('.slider_all').bxSlider();
+
+    }, 3000);
 
       $( ".tabs_content .nav-link" ).click(function( event ) {
             event.preventDefault();

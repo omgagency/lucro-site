@@ -27,11 +27,16 @@
                 <div class="col-sm-6 left_home">
 
                     <div class="red wow fadeInLeft">Lucro App</div>
-                    <h2 class="wow fadeInLeft" data-wow-delay="0.5s">La App para lucrarte
+                    <h2 class="wow fadeInLeft" data-wow-delay="0.5s">
+                        <ng-container *ngIf="arrContenidos">
+                            {{arrContenidos[0].titulo}}
+                        </ng-container>
                     </h2>
 
                     <div class="text_top_home wow fadeInLeft" data-wow-delay="1s">
-                        Es una comunidad en la que sus miembros se lucran de muchas formas por completar desafíos fáciles como tomar fotos y hacer encuestas.
+                        <ng-container *ngIf="arrContenidos">
+                            <div [innerHtml]="arrContenidos[0].contenido"> </div>
+                        </ng-container>
                     </div>
 
                     <div class="tiendas wow fadeInLeft" data-wow-delay="1.5s">

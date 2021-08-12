@@ -13,29 +13,54 @@
                         <div class="box1 wow flipInY" data-wow-delay="0.5s">
                             <img class="money " src="/assets/images/money.svg ">
                             <img src="/assets/images/box1.png " class="img-fluid ">
-                            <div class="cifra ">
-                                <div class="number ">+ 60.000</div>Usuarios registrados
+                            <div class="cifra">
+                                <ng-container *ngIf="arrCifras">
+                                    <div class="number ">{{arrCifras[0].cifra}}</div>{{arrCifras[0].texto}}
+                                </ng-container>
                             </div>
+
+                            <div class="android">
+                                <ng-container *ngIf="arrCifras">
+                                    <img src="/assets/images/android.svg"> {{arrCifras[8].cifra}} {{arrCifras[8].texto}}
+                                </ng-container>
+
+                            </div>
+
+
+                            <div class="ios">
+
+                                <ng-container *ngIf="arrCifras">
+                                    <img src="/assets/images/ios.svg"> {{arrCifras[7].cifra}} {{arrCifras[7].texto}}
+                                </ng-container>
+
+                            </div>
+
                         </div>
                         <div class="box_234 ">
 
                             <div class="box2 wow flipInX" data-wow-delay="1s">
                                 <img src="/assets/images/box2.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    57.4 % Mujeres
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[1].cifra}} {{arrCifras[1].texto}}
+                                    </ng-container>
                                 </div>
                             </div>
                             <div class="box3 wow flipInX" data-wow-delay="1.5s">
                                 <img src="/assets/images/box3.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    39,5% familias
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[3].cifra}} {{arrCifras[3].texto}}
+                                    </ng-container>
                                 </div>
                             </div>
 
                             <div class="box4 wow flipInX" data-wow-delay="2s">
                                 <img src="/assets/images/box4.png " class="img-fluid ">
                                 <div class="cifra_count rojo">
-                                    + 2.400 comercios
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[4].cifra}} {{arrCifras[4].texto}}
+                                    </ng-container>
                                 </div>
                             </div>
 
@@ -46,7 +71,9 @@
                             <div class="box5 wow flipInY" data-wow-delay="2.5s">
                                 <img src="/assets/images/box5.png " class="img-fluid ">
                                 <div class="cifra_count rojo">
-                                    + 40.000 redenciones entregadas
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[5].cifra}} {{arrCifras[5].texto}}
+                                    </ng-container>
                                 </div>
 
                                 <div class="box_text wow fadeInLeft" data-wow-delay="3.5s">
@@ -60,14 +87,18 @@
                             <div class="box6 wow flipInY" data-wow-delay="3s">
                                 <img src="/assets/images/box6.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    42,0% Hombres
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[2].cifra}} {{arrCifras[3].texto}}
+                                    </ng-container>
                                 </div>
                             </div>
 
                             <div class="box7 wow flipInY" data-wow-delay="3.5s">
                                 <img src="/assets/images/box7.png " class="img-fluid ">
                                 <div class="cifra_count amarillo">
-                                    16.000.000 respuestas
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[6].cifra}} {{arrCifras[6].texto}}
+                                    </ng-container>
                                 </div>
                             </div>
 
@@ -84,21 +115,43 @@
                                 <img class="money " src="/assets/images/money.svg ">
                                 <img src="/assets/images/box1.png " class="img-fluid ">
                                 <div class="cifra ">
-                                    <div class="number ">+ 60.000 </div>Usuarios registrados
+                                    <ng-container *ngIf="arrCifras">
+                                        <div class="number ">{{arrCifras[0].cifra}}</div>{{arrCifras[0].texto}}
+                                    </ng-container>
+                                </div>
+
+                                <div class="android">
+                                    <ng-container *ngIf="arrCifras">
+                                        <img src="/assets/images/android.svg"> {{arrCifras[8].cifra}} {{arrCifras[8].texto}}
+                                    </ng-container>
+
+                                </div>
+
+
+                                <div class="ios">
+
+                                    <ng-container *ngIf="arrCifras">
+                                        <img src="/assets/images/ios.svg"> {{arrCifras[7].cifra}} {{arrCifras[7].texto}}
+                                    </ng-container>
+
                                 </div>
                             </div>
 
                             <div class="box2 wow flipInX" data-wow-delay="1s">
                                 <img src="/assets/images/box2.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    57.4 % Mujeres
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[1].cifra}} {{arrCifras[1].texto}}
+                                    </ng-container>
                                 </div>
                             </div>
 
                             <div class="box5 wow flipInX" data-wow-delay="1.5s">
                                 <img src="/assets/images/box5.png " class="img-fluid ">
                                 <div class="cifra_count rojo">
-                                    + 40.000 regalos
+                                    <ng-container *ngIf="arrCifras">
+                                        {{arrCifras[5].cifra}} {{arrCifras[5].texto}}
+                                    </ng-container>
                                 </div>
                             </div>
 
@@ -116,21 +169,29 @@
                                 <div class="box_text wow fadeInLeft" data-wow-delay="2s">
 
                                     <div class="red ">Lucro App</div>
-                                    <h3>Cada vez son más los que se lucran de muchas formas</h3>
+                                    <h3>
+                                        <ng-container *ngIf="arrContenidos">
+                                            {{arrContenidos[0].titulo}}
+                                        </ng-container>
+                                    </h3>
 
                                 </div>
 
                                 <div class="box6 wow flipInY" data-wow-delay="2.5s">
                                     <img src="/assets/images/box6.png " class="img-fluid ">
                                     <div class="cifra_count verde">
-                                        42,0% Hombres
+                                        <ng-container *ngIf="arrCifras">
+                                            {{arrCifras[2].cifra}} {{arrCifras[2].texto}}
+                                        </ng-container>
                                     </div>
                                 </div>
 
                                 <div class="box3 wow flipInY" data-wow-delay="4s">
                                     <img src="/assets/images/box3.png " class="img-fluid ">
                                     <div class="cifra_count verde">
-                                        39,5% familias
+                                        <ng-container *ngIf="arrCifras">
+                                            {{arrCifras[3].cifra}} {{arrCifras[3].texto}}
+                                        </ng-container>
                                     </div>
                                 </div>
 
@@ -142,14 +203,18 @@
                                 <div class="box4 wow flipInX" data-wow-delay="3s">
                                     <img src="/assets/images/box4.png " class="img-fluid ">
                                     <div class="cifra_count rojo">
-                                        + 2.400 comercios
+                                        <ng-container *ngIf="arrCifras">
+                                            {{arrCifras[4].cifra}} {{arrCifras[4].texto}}
+                                        </ng-container>
                                     </div>
                                 </div>
 
                                 <div class="box7 wow flipInX" data-wow-delay="3.5s">
                                     <img src="/assets/images/box7.png " class="img-fluid ">
                                     <div class="cifra_count amarillo">
-                                        16.000.000 respuestas
+                                        <ng-container *ngIf="arrCifras">
+                                            {{arrCifras[6].cifra}} {{arrCifras[6].texto}}
+                                        </ng-container>
                                     </div>
                                 </div>
 
@@ -186,11 +251,17 @@
                 <div class="col-sm-7 box_influencers ">
 
                     <div class="red1 wow fadeInUp" data-wow-delay="1s">
-                        <img src="/assets/images/instagram.gif" class="img-fluid ">
+
+                        <ng-container *ngIf="arrInfluencers">
+                            <img src="https://lucro.omgagency.co/{{arrInfluencers[0].imagen}}" class="img-fluid ">
+                        </ng-container>
+
                     </div>
 
                     <div class="red2 wow fadeInUp" data-wow-delay="2s">
-                        <img src="/assets/images/tik_tok.gif" class="img-fluid ">
+                        <ng-container *ngIf="arrInfluencers">
+                            <img src="https://lucro.omgagency.co/{{arrInfluencers[1].imagen}}" class="img-fluid ">
+                        </ng-container>
                     </div>
 
                     <!--<div class="red3 wow fadeInUp" data-wow-delay="1.5s">
@@ -202,8 +273,14 @@
 
                     <div class="box_influencers_text wow fadeInRight" data-wow-delay="2.5s">
 
-                        <h3>Ellos nos recomienda y ganan con Lucro</h3>
-                        Cada día son más los influencers que se suman a la comunidad de Lucro y se lucran de muchas formas.
+                        <h3>
+                            <ng-container *ngIf="arrContenidos">
+                                {{arrContenidos[1].titulo}}
+                            </ng-container>
+                        </h3>
+                        <ng-container *ngIf="arrContenidos">
+                            <div [innerHtml]="arrContenidos[1].contenido"> </div>
+                        </ng-container>
 
                     </div>
 
@@ -224,98 +301,108 @@
                     <ul class="visible_mobile menu_testimonios ">
                         <li>
                             <div class="testimonio activo " data-link="0 ">
-                                <img src="/assets/images/t1.png ">
+                                <ng-container *ngIf="arrTestimonios">
+                                    <img src="https://lucro.omgagency.co/{{arrTestimonios[0].foto}}">
+                                </ng-container>
                             </div>
                         </li>
                         <li>
                             <div class="testimonio " data-link="1 ">
-                                <img src="/assets/images/t2.png ">
+                                <ng-container *ngIf="arrTestimonios">
+                                    <img src="https://lucro.omgagency.co/{{arrTestimonios[1].foto}}">
+                                </ng-container>
                             </div>
                         </li>
                         <li>
                             <div class="testimonio " data-link="2 ">
-                                <img src="/assets/images/t3.png ">
+                                <ng-container *ngIf="arrTestimonios">
+                                    <img src="https://lucro.omgagency.co/{{arrTestimonios[2].foto}}">
+                                </ng-container>
                             </div>
                         </li>
                         <li>
                             <div class="testimonio " data-link="3 ">
-                                <img src="/assets/images/t4.png ">
+                                <ng-container *ngIf="arrTestimonios">
+                                    <img src="https://lucro.omgagency.co/{{arrTestimonios[3].foto}}">
+                                </ng-container>
                             </div>
                         </li>
                         <li>
                             <div class="testimonio " data-link="4 ">
-                                <img src="/assets/images/t5.png ">
+                                <ng-container *ngIf="arrTestimonios">
+                                    <img src="https://lucro.omgagency.co/{{arrTestimonios[4].foto}}">
+                                </ng-container>
                             </div>
                         </li>
                         <li>
                             <div class="testimonio " data-link="5 ">
-                                <img src="/assets/images/t6.png ">
+                                <ng-container *ngIf="arrTestimonios">
+                                    <img src="https://lucro.omgagency.co/{{arrTestimonios[5].foto}}">
+                                </ng-container>
                             </div>
                         </li>
                     </ul>
 
 
                     <div class="testimonio t1 activo visible_desk avatar fadeInLeft wow" data-wow-delay="1s" data-link="0 ">
-                        <img src="/assets/images/t1.png ">
+                        <ng-container *ngIf="arrTestimonios">
+                            <img src="https://lucro.omgagency.co/{{arrTestimonios[0].foto}}">
+                        </ng-container>
                     </div>
                     <div class="testimonio t2 visible_desk avatar fadeInRight wow" data-wow-delay="1s" data-link="1 ">
-                        <img src="/assets/images/t2.png ">
+                        <ng-container *ngIf="arrTestimonios">
+                            <img src="https://lucro.omgagency.co/{{arrTestimonios[1].foto}}">
+                        </ng-container>
                     </div>
                     <div class="testimonio t3 visible_desk avatar fadeInLeft wow" data-wow-delay="1s" data-link="2 ">
-                        <img src="/assets/images/t3.png ">
+                        <ng-container *ngIf="arrTestimonios">
+                            <img src="https://lucro.omgagency.co/{{arrTestimonios[2].foto}}">
+                        </ng-container>
                     </div>
                     <div class="testimonio t4 visible_desk avatar fadeInRight wow" data-wow-delay="1s" data-link="3 ">
-                        <img src="/assets/images/t4.png ">
+                        <ng-container *ngIf="arrTestimonios">
+                            <img src="https://lucro.omgagency.co/{{arrTestimonios[3].foto}}">
+                        </ng-container>
                     </div>
                     <div class="testimonio t5 visible_desk avatar fadeInLeft wow" data-wow-delay="1s" data-link="4 ">
-                        <img src="/assets/images/t5.png ">
+                        <ng-container *ngIf="arrTestimonios">
+                            <img src="https://lucro.omgagency.co/{{arrTestimonios[4].foto}}">
+                        </ng-container>
                     </div>
                     <div class="testimonio t6 visible_desk avatar fadeInRight wow" data-wow-delay="1s" data-link="5 ">
-                        <img src="/assets/images/t6.png ">
+                        <ng-container *ngIf="arrTestimonios">
+                            <img src="https://lucro.omgagency.co/{{arrTestimonios[5].foto}}">
+                        </ng-container>
                     </div>
+
 
 
                     <div class="box_center_testimonios wow fadeInUp" data-wow-delay="1s">
 
                         <div class="box_1_testimonios ">
 
-                            <h4>Nuestra comunidad ya está ganando</h4>
+                            <h4>
+                                <ng-container *ngIf="arrContenidos">
+                                    {{arrContenidos[2].titulo}}
+                                </ng-container>
+                            </h4>
+
+
+
 
                             <div class="slider_testimonios">
 
-
-                                <div class="testimonio_texto ">
-                                    “Me gusta Lucro porque gracias a sus desafíos que envía y a sus diferentes formas de lucrarse, yo soy el afortunado ganador de un TV Samsung de 43 pulgadas, que gané con los desafíos blancos y el juego Lucro Match".
-                                    <div class="arroba">Edwar Malpica / Duitama</div>
+                                <div class="testimonio_texto" *ngFor="let item of arrTestimonios">
+                                    {{item.testimonio}}
+                                    <div class="arroba"> {{item.nombre}} </div>
                                 </div>
-                                <div class="testimonio_texto">
-                                    “Le agradezco a Lucro porque gracias a sus desafíos blancos pude jugar y ganar este bono de 300 mil (...) También le agradezco porque su método de redimir dinero es muy sencillo”.
-                                    <div class="arroba ">Cristian Daniel Vega Sierra / Bogotá</div>
-                                </div>
-                                <div class="testimonio_texto ">
-                                    “Estoy en Lucro, me gusta porque ahí he ganado fichas y he ganado dinero, lo último que me gané fueron 20 mil pesos, gracias”.
-                                    <div class="arroba">Jhon Freddy Romero / Bogotá</div>
-                                </div>
-                                <div class="testimonio_texto">
-                                    “Ganador del Bono Plan en Familia por Valor de $100.000. Tiempo que obtuvo en el juego Lucro Match: 41.594 - Tabla de posiciones: N°4”.
-                                    <div class="arroba ">Francisco Eladio Méndez Ramos / Ibagué</div>
-                                </div>
-                                <div class="testimonio_texto ">
-                                    “Ganadora del Bono Diversión por valor de $50.000. Tiempo que obtuvo en el juego Lucro Match: 43.448. Tabla de posiciones: N°9”.
-                                    <div class="arroba">Rosa María Sierra Calderón / Bogotá</div>
-                                </div>
-                                <div class="testimonio_texto">
-                                    Ganadora del premio de 100 mil pesos &quot;Bono Ahorra Plata&quot;. Tiempo que obtuvo en el juego Lucro Match: 47.355. Tabla de posiciones: N° 8
-                                    <div class="arroba ">Laura Vanessa García Rosas / Ibagué</div>
-                                </div>
-
 
                             </div>
 
                         </div>
 
-                        <div class="box_2_testimonios "></div>
-                        <div class="box_3_testimonios "></div>
+                        <div class="box_2_testimonios"></div>
+                        <div class="box_3_testimonios"></div>
 
                     </div>
 
