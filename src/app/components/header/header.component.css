@@ -76,6 +76,8 @@ ul.right_top {
     background-image: url(/assets/images/menu.svg);
 }
 
+
+
 @media (max-width: 768px) {
     li a.nav-link.menu_link.activo:after {
         width: 54px;

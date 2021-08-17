@@ -1503,6 +1503,25 @@ body nav.navbar.bg-dark.header_scroll {
     margin-right: 5px;
 }
 
+.whatsappme {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    bottom: 8px;
+    right: 15px;
+    height: 60px;
+    min-width: 60px;
+    max-width: 95vw;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 1px 6px 24px 0 rgb(7 94 84 / 24%);
+    cursor: pointer;
+    transition: background-color .2s linear;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1000;
+}
+
 @media (max-width: 768px) {
     .slide {
         padding: 0 20px;
