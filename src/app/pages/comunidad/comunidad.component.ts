@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
+import { Observable, Observer } from 'rxjs';
+import io from 'socket.io-client';
 
 
 
@@ -13,15 +15,37 @@ declare var $: any;
 })
 export class ComunidadComponent implements OnInit {
 
+
+
   constructor( private httpService: HttpClient) { }
 
   arrTestimonios: string [];
   arrInfluencers: string [];
   arrCifras: string [];
   arrContenidos: string [];
+  private socket;
+
+
+  getMessages() {
+    let observable = new Observable((observer) => {
+      this.socket = io('https://analytics-streaming-5nre6opcba-uc.a.run.app', { transports: ['websocket'] });
+      this.socket.on('get:app_counters', (data) => {
+        observer.next(data);
+      });
+      return () => {
+        this.socket.disconnect();
+      };
+    });
+
+    return observable;
+  }
+
 
 
   ngOnInit(): void {
+
+    this.getMessages().subscribe((v) => console.log('SOCKET emmit: ', v));
+
 
     this.httpService.get('https://lucro.omgagency.co/servicios/contenidos.php?cat=comunidad').subscribe(
       data => {

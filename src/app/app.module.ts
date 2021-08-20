@@ -14,6 +14,9 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+
+const config: SocketIoConfig = { url: 'https://analytics-streaming-5nre6opcba-uc.a.run.app', options: {} };
 
 
 @NgModule({
@@ -34,7 +37,8 @@ import { CommonModule } from '@angular/common';
     NgwWowModule,
     AppRoutingModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]
