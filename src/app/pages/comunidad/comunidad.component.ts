@@ -25,10 +25,13 @@ export class ComunidadComponent implements OnInit {
   arrContenidos: string [];
   private socket;
 
+  arrCifrasSocket: string [];
+
 
   getMessages() {
     let observable = new Observable((observer) => {
-      this.socket = io('https://analytics-streaming-5nre6opcba-uc.a.run.app', { transports: ['websocket'] });
+     //this.socket = io('https://analytics-streaming-5nre6opcba-uc.a.run.app', { transports: ['websocket'] });
+     this.socket = io('https://analytics-streaming-xldvesyq2a-uc.a.run.app', { transports: ['websocket'] });
       this.socket.on('get:app_counters', (data) => {
         observer.next(data);
       });
@@ -44,7 +47,18 @@ export class ComunidadComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.getMessages().subscribe((v) => console.log('SOCKET emmit: ', v));
+    this.getMessages().subscribe(
+
+    v => {
+      this.arrCifrasSocket = v as string []; 
+
+      console.log( this.arrCifrasSocket);
+    }
+
+    );
+
+
+
 
 
     this.httpService.get('https://lucro.omgagency.co/servicios/contenidos.php?cat=comunidad').subscribe(

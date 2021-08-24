@@ -14,14 +14,14 @@
                             <img class="money " src="/assets/images/money.svg ">
                             <img src="/assets/images/box1.png " class="img-fluid ">
                             <div class="cifra">
-                                <ng-container *ngIf="arrCifras">
-                                    <div class="number ">{{arrCifras[0].cifra}}</div>{{arrCifras[0].texto}}
+                                <ng-container *ngIf="arrCifrasSocket">
+                                    <div class="number ">{{arrCifrasSocket.users.total}}</div>{{arrCifras[0].texto}}
                                 </ng-container>
                             </div>
 
                             <div class="android">
-                                <ng-container *ngIf="arrCifras">
-                                    <img src="/assets/images/android.svg"> {{arrCifras[8].cifra}} {{arrCifras[8].texto}}
+                                <ng-container *ngIf="arrCifrasSocket">
+                                    <img src="/assets/images/android.svg"> {{arrCifrasSocket.users.android}} %  {{arrCifras[8].texto}}
                                 </ng-container>
 
                             </div>
@@ -29,8 +29,8 @@
 
                             <div class="ios">
 
-                                <ng-container *ngIf="arrCifras">
-                                    <img src="/assets/images/ios.svg"> {{arrCifras[7].cifra}} {{arrCifras[7].texto}}
+                                <ng-container *ngIf="arrCifrasSocket">
+                                    <img src="/assets/images/ios.svg"> {{arrCifrasSocket.users.ios}} %  {{arrCifras[7].texto}}
                                 </ng-container>
 
                             </div>
@@ -41,16 +41,16 @@
                             <div class="box2 wow flipInX" data-wow-delay="1s">
                                 <img src="/assets/images/box2.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[1].cifra}} {{arrCifras[1].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.users.female}} % {{arrCifras[1].texto}}
                                     </ng-container>
                                 </div>
                             </div>
                             <div class="box3 wow flipInX" data-wow-delay="1.5s">
                                 <img src="/assets/images/box3.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[3].cifra}} {{arrCifras[3].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.users.families}} % {{arrCifras[3].texto}}
                                     </ng-container>
                                 </div>
                             </div>
@@ -58,8 +58,8 @@
                             <div class="box4 wow flipInX" data-wow-delay="2s">
                                 <img src="/assets/images/box4.png " class="img-fluid ">
                                 <div class="cifra_count rojo">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[4].cifra}} {{arrCifras[4].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.shops}} {{arrCifras[4].texto}}
                                     </ng-container>
                                 </div>
                             </div>
@@ -71,8 +71,8 @@
                             <div class="box5 wow flipInY" data-wow-delay="2.5s">
                                 <img src="/assets/images/box5.png " class="img-fluid ">
                                 <div class="cifra_count rojo">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[5].cifra}} {{arrCifras[5].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.withdraws}} <br> {{arrCifras[5].texto}}
                                     </ng-container>
                                 </div>
 
@@ -87,8 +87,8 @@
                             <div class="box6 wow flipInY" data-wow-delay="3s">
                                 <img src="/assets/images/box6.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[2].cifra}} {{arrCifras[2].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.users.male}} % {{arrCifras[2].texto}}
                                     </ng-container>
                                 </div>
                             </div>
@@ -96,8 +96,8 @@
                             <div class="box7 wow flipInY" data-wow-delay="3.5s">
                                 <img src="/assets/images/box7.png " class="img-fluid ">
                                 <div class="cifra_count amarillo">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[6].cifra}} {{arrCifras[6].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.awards}} {{arrCifras[6].texto}}
                                     </ng-container>
                                 </div>
                             </div>
@@ -115,14 +115,14 @@
                                 <img class="money " src="/assets/images/money.svg ">
                                 <img src="/assets/images/box1.png " class="img-fluid ">
                                 <div class="cifra ">
-                                    <ng-container *ngIf="arrCifras">
-                                        <div class="number ">{{arrCifras[0].cifra}}</div>{{arrCifras[0].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        <div class="number ">{{arrCifrasSocket.users.total}}</div>{{arrCifras[0].texto}}
                                     </ng-container>
                                 </div>
 
                                 <div class="android">
-                                    <ng-container *ngIf="arrCifras">
-                                        <img src="/assets/images/android.svg"> {{arrCifras[8].cifra}} {{arrCifras[8].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        <img src="/assets/images/android.svg"> {{arrCifrasSocket.users.android}} %  {{arrCifras[8].texto}}
                                     </ng-container>
 
                                 </div>
@@ -130,8 +130,8 @@
 
                                 <div class="ios">
 
-                                    <ng-container *ngIf="arrCifras">
-                                        <img src="/assets/images/ios.svg"> {{arrCifras[7].cifra}} {{arrCifras[7].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        <img src="/assets/images/ios.svg"> {{arrCifrasSocket.users.ios}} %  {{arrCifras[7].texto}}
                                     </ng-container>
 
                                 </div>
@@ -140,8 +140,8 @@
                             <div class="box2 wow flipInX" data-wow-delay="1s">
                                 <img src="/assets/images/box2.png " class="img-fluid ">
                                 <div class="cifra_count verde">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[1].cifra}} {{arrCifras[1].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.users.female}} % {{arrCifras[1].texto}}
                                     </ng-container>
                                 </div>
                             </div>
@@ -149,8 +149,8 @@
                             <div class="box5 wow flipInX" data-wow-delay="1.5s">
                                 <img src="/assets/images/box5.png " class="img-fluid ">
                                 <div class="cifra_count rojo">
-                                    <ng-container *ngIf="arrCifras">
-                                        {{arrCifras[5].cifra}} {{arrCifras[5].texto}}
+                                    <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.withdraws}} {{arrCifras[5].texto}}
                                     </ng-container>
                                 </div>
                             </div>
@@ -180,18 +180,18 @@
                                 <div class="box6 wow flipInY" data-wow-delay="2.5s">
                                     <img src="/assets/images/box6.png " class="img-fluid ">
                                     <div class="cifra_count verde">
-                                        <ng-container *ngIf="arrCifras">
-                                            {{arrCifras[2].cifra}} {{arrCifras[2].texto}}
-                                        </ng-container>
+                                        <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.users.male}} % {{arrCifras[2].texto}}
+                                    </ng-container>
                                     </div>
                                 </div>
 
                                 <div class="box3 wow flipInY" data-wow-delay="4s">
                                     <img src="/assets/images/box3.png " class="img-fluid ">
                                     <div class="cifra_count verde">
-                                        <ng-container *ngIf="arrCifras">
-                                            {{arrCifras[3].cifra}} {{arrCifras[3].texto}}
-                                        </ng-container>
+                                        <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.users.families}} % {{arrCifras[3].texto}}
+                                    </ng-container>
                                     </div>
                                 </div>
 
@@ -203,17 +203,17 @@
                                 <div class="box4 wow flipInX" data-wow-delay="3s">
                                     <img src="/assets/images/box4.png " class="img-fluid ">
                                     <div class="cifra_count rojo">
-                                        <ng-container *ngIf="arrCifras">
-                                            {{arrCifras[4].cifra}} {{arrCifras[4].texto}}
-                                        </ng-container>
+                                       <ng-container *ngIf="arrCifrasSocket">
+                                        {{arrCifrasSocket.shops}} {{arrCifras[4].texto}}
+                                    </ng-container>
                                     </div>
                                 </div>
 
                                 <div class="box7 wow flipInX" data-wow-delay="3.5s">
                                     <img src="/assets/images/box7.png " class="img-fluid ">
                                     <div class="cifra_count amarillo">
-                                        <ng-container *ngIf="arrCifras">
-                                            {{arrCifras[6].cifra}} {{arrCifras[6].texto}}
+                                        <ng-container *ngIf="arrCifrasSocket">
+                                            {{arrCifrasSocket.awards}} {{arrCifras[6].texto}}
                                         </ng-container>
                                     </div>
                                 </div>
