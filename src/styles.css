@@ -613,6 +613,10 @@ img.b4 {
     font-size: 20px;
 }
 
+.left_panel .info a {
+    color: #fff;
+}
+
 .left_panel .info strong {
     font-size: 34px;
     font-weight: bold;
@@ -631,6 +635,10 @@ img.b4 {
 .left_panel strong {
     display: block;
 }
+
+div[ data-color="premios_back"] .left_panel .info a {
+color: #344549 !important;
+    }
 
 div[ data-color="premios_back"] .left_panel .info .btn {
     border: 2px solid #344549 !important;
@@ -660,7 +668,7 @@ div[ data-color="bonificacion_back"] {
 
 ul#myTab {
     border-bottom: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
