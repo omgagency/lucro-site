@@ -1519,7 +1519,7 @@ body nav.navbar.bg-dark.header_scroll {
     right: 15px;
     height: 60px;
     min-width: 60px;
-    max-width: 95vw;
+    max-width: 60px;
     background-color: #25d366;
     color: #fff;
     border-radius: 30px;
